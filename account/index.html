@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="../styles/default.css">
+		<title>Account | Vienna</title>
+    </head>
+
+    <body>
+        <div class="container-fluid">
+
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="navbar-list">
+                        <li><a class="uppercase" href="../index.html">Vienna</a></li>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="account/index.html">Account</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container">
+                <h1>Account information</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Your username</label>
+                        <input type="username" class="form-control" id="inputUsername" aria-describedby="usernameHelp" placeholder="Enter username" value="PlaceholderUsername" disabled>
+                        <small id="usernameHelp" class="form-text text-muted">You may only change your username once a day, available in 13 hours.</small>
+                    </div>
+					<h2>Change password</h2>
+                    <div class="form-group">
+                        <label for="inputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+					<div class="form-group">
+                        <label for="inputPassword2">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleTextarea">Example textarea</label>
+                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                    </div>
+                    <fieldset class="form-group">
+                        <legend>Radio buttons</legend>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                            Opt-in to all marketing emails and third-party services
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                            Opt-in to promotional deal emails from Vienna emails only
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <label class="form-check-label">
+                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
+                            Opt-out of all marketing emails and third-party services, only recieve emails for important account updates
+                            </label>
+                        </div>
+                    </fieldset>
+                    <div class="form-check">
+                        <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input">
+                        Check me out
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
