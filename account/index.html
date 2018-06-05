@@ -17,63 +17,48 @@
                     <ul class="navbar-list">
                         <li><a class="uppercase" href="../index.html">Vienna</a></li>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="account/index.html">Account</a></li>
+                        <li><a href="index.html">Account</a></li>
+                        <li><a href="../products/index.html">Products</a></li>
                     </ul>
                 </div>
             </nav>
 			<div class="navbar-offset"></div>
 
             <div class="container">
+                <br>
                 <h1>Account information</h1>
+                <br>
                 <form>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Your username</label>
-                        <input type="username" class="form-control" id="inputUsername" aria-describedby="usernameHelp" placeholder="Enter username" value="PlaceholderUsername" disabled>
-                        <small id="usernameHelp" class="form-text text-muted">You may only change your username once a day, available in 13 hours.</small>
+                    <div>
+                        <h2>Change Username</h2>
+                        <label>Your username</label>
+                        <input type="username" id="inputUsername" placeholder="Enter a username">
+                        <small>You may only change your username once a day.</small>
                     </div>
-					<h2>Change password</h2>
-                    <div class="form-group">
-                        <label for="inputPassword1">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <br>
+                    <div>
+                        <h2>Change Password</h2>
+                        <input type="password" id="inputPassword" placeholder="Enter Password">
+                        <input type="password" id="inputPasswordConfirm" placeholder="Confirm Password">
                     </div>
-					<div class="form-group">
-                        <label for="inputPassword2">Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <br>
+                    <div>
+                        <h2>Change E-Mail Address</h2>
+                        <label>Enter your email address</label>
+                        <input type="email" id="inputEmail" placeholder="Enter e-mail address">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleTextarea">Example textarea</label>
-                        <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                    </div>
-                    <fieldset class="form-group">
-                        <legend>Radio buttons</legend>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                            Opt-in to all marketing emails and third-party services
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-                            Opt-in to promotional deal emails from Vienna emails only
-                            </label>
-                        </div>
-                        <div class="form-check disabled">
-                            <label class="form-check-label">
-                            <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3">
-                            Opt-out of all marketing emails and third-party services, only recieve emails for important account updates
-                            </label>
-                        </div>
-                    </fieldset>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input type="checkbox" class="form-check-input">
-                        Check me out
-                        </label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <br>
+                    <input type="button" onclick="ValidateAll()" value="Submit">
+                    <input type="button" onclick="ResetAccount()" value="Reset">
                 </form>
+                <br>
+                <div id="messageBox">
+
+                </div>
             </div>
         </div>
+        <script src="../scripts/jquery-3.3.1.min.js"></script>
+        <script src="../scripts/js.cookie.js"></script>
+        <script src="../scripts/accountvalidator.js"></script>
     </body>
 </html>
