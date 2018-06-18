@@ -49,16 +49,16 @@ function DisplayBasket() {
         let currentItemQuan = ItemQuantity[currentItemName];
         if(currentItemQuan > 0) {
             messagebox.innerHTML += "<h3>" + currentItemName + "</h3>";
-            messagebox.innerHTML += "<p>Cost: £" + currentItemCost + "</p>";
+            messagebox.innerHTML += "<p>Cost: £" + parseFloat(currentItemCost).toFixed(2) + "</p>";
             messagebox.innerHTML += "<p>Quantity: " + currentItemQuan + "</p>";
-            messagebox.innerHTML += "<p>Sub-total: £" + Math.round((currentItemCost * currentItemQuan) * 100) / 100 + "</p>";
+            messagebox.innerHTML += "<p>Sub-total: £" + (currentItemCost * currentItemQuan).toFixed(2) + "</p>";
             total += currentItemCost * currentItemQuan;
         }
     }
     if(total === 0) {
         DisplayHelpMessage();
     } else {
-        messagebox.innerHTML += "<h1>Total: £" + Math.round(total * 100) / 100 + "</h1>";
+        messagebox.innerHTML += "<h1>Total: £" + total.toFixed(2) + "</h1>";
     }
 }
 
