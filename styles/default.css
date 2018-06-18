@@ -12,8 +12,8 @@
 /* End of Global Initialisers */
 
 /* Structuring Rules */
-.container       { width: 100%; max-width: 1024px; margin: 0px auto; }
-.container-fluid { width: 100%;                    margin: 0px auto; }
+.container       { display: block; width: 100%; max-width: 1024px; margin: 0px auto; }
+.container-fluid { display: block; width: 100%;                    margin: 0px auto; }
 
 .row    { display: inline-block;       width:      100%; }
 .col    { display: block; width:      auto; float: left; }
@@ -71,34 +71,29 @@
     padding: 15px;
     text-decoration: none;
     box-shadow: inset 0 0 1px #000000;
-    transition: ease-in-out 0.5s box-shadow;
-}
-.button-primary {
-    transition: ease-in-out 0.1s background-color;
     background-color: #4683c4;
+    transition: ease-in-out 0.2s box-shadow, ease-in-out 0.1s background-color;
 }
-.button-primary:hover {
+.button:hover {
     background-color: #336daa;
     box-shadow: inset 0 0 5px #000000;
-}
-.button-social {
-    transition: ease-in-out 0.1s background-color;
-    display: block !important;
-    margin: 10px;
-    width: 90%;
-    padding: 20px;
-    border: 3px solid white;
 }
 
 input   { color:black; font-size:0.8em }
 textarea{ color:black; font-size:0.8em }
-button { color: black;}
-img {width:100%;}
+button  { color: black; }
+img     { width:100%; }
+a       { text-decoration: none; }
 
-.button-instagram:hover { background-color: #fb3958; color: white; }
-.button-twitter:hover   { background-color: #00aced; color: white; }
-.button-facebook:hover  { background-color: #4268b7; color: white; }
-.button-reddit:hover    { background-color: #ff4500; color: white; }
+.instagram,.twitter,.facebook,.reddit {
+    display: inline-block;
+    margin: 20px 10px;
+    width: 20%;
+}
+.instagram { background-color: #fb3958; color: white; }
+.twitter   { background-color: #00aced; color: white; }
+.facebook  { background-color: #4268b7; color: white; }
+.reddit    { background-color: #ff4500; color: white; }
 
 .product-listing {
     position:relative;
